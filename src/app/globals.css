@@ -9,8 +9,89 @@
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
 
-  border: red 1px solid;
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem; 
+}
+
+/*QUIZ*/
+.quiz-container {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.question-container {
+}
+
+.question-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  transition: 0.3s;
+  box-shadow: rgba(175, 175, 175, 0.25) 0px 1px 1px, rgba(173, 173, 173, 0.13) 0px 0px 1px 1px;
+}
+
+.item:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 0.75rem rgb(129, 129, 129));
+}
+
+button {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.result {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 2rem;
+  margin: 2rem;
 }
 
 /* 2xl */

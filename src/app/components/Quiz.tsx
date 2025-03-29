@@ -23,21 +23,28 @@ export default function Quiz() {
   };
 
   return (
-    <div>
+    <div className="quiz-container">
       {showResult ? (
         <div className="result">
           <h2>
             Your Score: {score} / {questions.length}
           </h2>
+          <button onClick={() => window.location.reload()}>Restart Quiz</button>
         </div>
       ) : (
         <div className="question-container">
-          <h2>{currentQuestion.question}</h2>
+          <div className="question-header">
+            <h2>{currentQuestion.question}</h2>
+          </div>
           <ul className="options-list">
             {currentQuestion.options.map((option, index) => (
-              <li key={index} onClick={() => handleAnswerClick(option)}>
+              <div
+                className="item"
+                key={index}
+                onClick={() => handleAnswerClick(option)}
+              >
                 {option}
-              </li>
+              </div>
             ))}
           </ul>
         </div>

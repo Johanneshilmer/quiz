@@ -1,3 +1,5 @@
+import Quiz from "./components/Quiz";
+
 export default function Home() {
   return (
     <div>
@@ -5,7 +7,7 @@ export default function Home() {
         <div>Header</div>
       </div>
       <div className="container">
-        <h1>Quiz</h1>
+        <Quiz />
       </div>
     </div>
   );
